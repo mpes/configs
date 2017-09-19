@@ -18,15 +18,15 @@
 * `:set syntax=enable` enable syntax highlighting
 * `:set filetype=xml` sets syntax to XML
 * `:e .` browse directory
-.* `i` long, wide or tree
-.* `s` sort on name, siize or date
-.* `r` reverse order
-.* `gh` hide/show dotfiles
-.* `x` opens with associated application
-.* `d` makes directory
-.* `D` deletes file or dir
-.* `R` renames
-.* `-` goes up one level
+ `i` long, wide or tree
+ `s` sort on name, siize or date
+ `r` reverse order
+ `gh` hide/show dotfiles
+ `x` opens with associated application
+ `d` makes directory
+ `D` deletes file or dir
+ `R` renames
+ `-` goes up one level
 * `:e filename` opens a file
 * `:cd path` changes working directory. Then we can use relative paths and use TAB to autocomplete
 * `:set softtabstop=2` control how many columns vim uses when you hit Tab in insert mode
