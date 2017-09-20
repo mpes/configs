@@ -12,6 +12,7 @@
 * `:set list?` show current value
 * `:set list&` set to default value 
 ### set
+* `:set list` show hidden characters
 * `:set ruler` show the cursor position in the status bar
 * `:set number` show line numbers
 * `:set laststatus` always show the statusbar
