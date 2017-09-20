@@ -35,3 +35,7 @@
 ## Visual mode
 * `o` in selection toggles cursor between first and last cursor positions
 
+## Insert mode
+* `ctrl+d` shift text left in insert mode
+* `ctrl+t` shift text right in insert mode
+
