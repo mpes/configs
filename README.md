@@ -11,7 +11,7 @@
 ## Settings
 ### marks
 * `ma` creates mark named *a*
-* ``a` jumps to mark *a* position
+* `` `a`` jumps to mark *a* position
 * `'a` jumps to the begginning of the line of mark *a*
 ### options tricks
 
