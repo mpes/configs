@@ -63,3 +63,7 @@
 * `ctrl+d` shift text left in insert mode
 * `ctrl+t` shift text right in insert mode
 
+###Tips
+* `:123put =range(11,15)`  inserts number 11-15 after line number 123
+* `:for i in range(1,10) | put ='192.168.0.'.i | endfor` generates ip addresses 192.168.0.1 to 192.168.0.10
+
