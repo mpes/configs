@@ -9,7 +9,10 @@
  `:w !sudo tee %` saves the file with sudo
  
 ## Settings
-
+### marks
+* `ma` creates mark named *a*
+* ``a` jumps to mark *a* position
+* `'a` jumps to the begginning of the line of mark *a*
 ### options tricks
 
 * `:set list` or `:set nolist` - turn on/off
