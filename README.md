@@ -5,10 +5,12 @@
 
 ### Keyboard shortcuts
 
-* <kbd>ctrl + L<kbd> refreshes screen
+* <kbd>ctrl + L</kbd> refreshes screen
 * <kbd>ctrl + ^</kbd> switches to next file when multiple opened
+* 
 ### General 
  `:w !sudo tee %` saves the file with sudo
+ <kbd>ctrl + r =</kbd> you can type expressions *2+2* or system commands *system('pwd')* and results will be placed at cursor when in insert mode
  
 ## Settings
 ### marks
