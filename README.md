@@ -3,9 +3,11 @@
 `vim filename` Opens new file in Vim
 `vim -N` opens Vim in new mode incopatible with Vi
 
-### General
+### Keyboard shortcuts
 
- `ctrl + L` refreshes screen
+* <kbd>ctrl + L<kbd> refreshes screen
+* <kbd>ctrl + ^</kbd> switches to next file when multiple opened
+### General 
  `:w !sudo tee %` saves the file with sudo
  
 ## Settings
