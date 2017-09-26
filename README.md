@@ -44,6 +44,7 @@
  `-` goes up one level
 * `:e filename` opens a file
 * `:cd path` changes working directory. Then we can use relative paths and use TAB to autocomplete
+* `:tab ball` moves opened files to tabs
 ### search and replace
 |Range|Description|Example|
 |-------|-----------|---------|
