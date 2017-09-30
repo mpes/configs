@@ -45,6 +45,60 @@
 * `:e filename` opens a file
 * `:cd path` changes working directory. Then we can use relative paths and use TAB to autocomplete
 * `:tab ball` moves opened files to tabs
+### Editor
+
+#### Editor: Open files
+
+* `:e FILENAME` - open file to edit, replaced current window with file
+* `:tabe` (`:tabedit`) - open file in new tab
+* `:tabc` (`:tabclose`) - close current tab
+
+#### Editor: Searching, greping etc
+
+* `:noh` (`:nohl`, `:nohlsearch`) - clear highlight after search
+* `/foo` - searching text `foo` in whole document (forwards)
+* `?foo` - searching text `foo` in whole document (backwards)
+* `:cw` - show result list after searching
+* `:%s/foo/bar/g` - replace globally `foo` to `bar`
+* `*` - searching word where cursor is on it (forwards)
+* `#` - searching word where cursor is on it (backwards)
+* `g*` - searching partial words where cursor is on it (forwards)
+* `g#` - searching partial words where cursor is on it (backwards)
+* `/\<foo` - searching words starting with `foo`
+* `/foo\>` - searching words ending with `foo`
+* `/\<foo\>` - searching words `foo`
+
+#### Editor: Misc
+
+* `so ~/.vimrc` - reload configuration in opened editor
+* `:retab` - replace current whitespaces with sets in `.vimrc` file
+* `:!ls` - run command `ls` in shell
+* <kbd>Ctrl + a</kbd> - increment number by one you are at
+* <kbd>Ctrl + x</kbd> - decrement number by one you are at
+* <kbd>ZZ</kbd> - write files and quit
+* <kbd>ZQ</kbd> - quit all instances of vim
+* <kbd>Ctrl + z</kbd> - hide Vim to background - use `fg` in terminal to bring it to foreground
+* <kbd>Ctrl + l</kbd> - redraw Vim windows 
+
+### Cursor navigation
+
+* <kbd>Ctrl + e</kbd> - scroll the window down
+* <kbd>Ctrl + y</kbd> - scroll the window up
+* <kbd>Ctrl + f</kbd> - scroll down one page
+* <kbd>Ctrl + b</kbd> - scroll up one page
+* `H` - move cursor to the top of the viewport
+* `M` - move cursor to the middle of the viewport
+* `L` - move cursor to the bottom of the viewport
+* `gg` - move cursor to the top of file
+* `G` - move cursror to the bottom of file
+* `{` - move cursor to previous empty line
+* `}` - move cursor to next empty line
+* `%` - jump between bracket in line
+* `30%` - move cursor to line which is 30% of the top of file
+* `zz` - center verticaly line with cursor
+* ` `` ` - back cursors to previous place
+* <kbd>Ctrl + ^</kbd> - return to previous file
+
 ### search and replace
 |Range|Description|Example|
 |-------|-----------|---------|
@@ -71,7 +125,13 @@
 * `ctrl+d` shift text left in insert mode
 * `ctrl+t` shift text right in insert mode
 
-###Tips
+#### Editor: Markers
+
+* `m{char}` - save current position into `{char}`
+* \`{char} - go to saved mark
+* `:marks` - display list of current saved markers
+
+### Tips
 * `:123put =range(11,15)`  inserts number 11-15 after line number 123
 * `:for i in range(1,10) | put ='192.168.0.'.i | endfor` generates ip addresses 192.168.0.1 to 192.168.0.10
 
