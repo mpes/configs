@@ -23,6 +23,27 @@
 * `:set list?` show current value
 * `:set list&` set to default value  
 
+## Configuration rules
+
+The best way is put them to file (`~/.vimrc`). Default path for configuration.
+
+* `syntax on` - enable syntax highlighting
+* `colorscheme molokai` - set editor theme
+* `set number` - enable line number
+* `set noic` - don't ignore letter case, ex. in searching
+* `set expandtab` - change tabulators to spaces
+* `set tabstop=4` - number of characters as indent with TAB key
+* `set shiftwidth=4` - number of characters as indent with insertions
+* `set mouse=a` - enable mouse in editor
+* `set background=dark` - little change for brighter colors
+* `set autoindent` - enable automatic indention
+* `set hlsearch` - enable highlighting after searching process
+* `set incsearch` - run searching process after you press any char (after '/')
+* `set nowrapscan` - stop navigate throught search result when file is ends
+* `set nowrap` - don't wrap lines
+* `set clipboard=unnamedplus` - Vim use the same buffer as OS
+* `set guifont=Inconsolata\ 12` - change font in editor
+
 ### set operation
 
 * `:set list` show hidden characters
@@ -120,6 +141,8 @@
 
 ## Visual mode
 * `o` in selection toggles cursor between first and last cursor positions
+* <kbd>ctrl-v</kbd>  - selects columns
+* `gv`      - reselect block
 
 ## Insert mode
 * `ctrl+d` shift text left in insert mode
