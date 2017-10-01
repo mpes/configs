@@ -61,7 +61,7 @@ In insert mode, try:
 * `:set dictionary=/usr/share/dict/words`
 * <kbd>ctrl-x</kbd><kbd>ctrl-k</kbd>     - dictionary completion
 * <kbd>ctrl-w</kbd> erases word (insert mode...
-*<kbd>ctrl-u</kbd> erases line  ...or on command line)
+* <kbd>ctrl-u</kbd> erases line  ...or on command line)
 
 ### set operation
 
@@ -109,6 +109,12 @@ In insert mode, try:
 * `/\<foo` - searching words starting with `foo`
 * `/foo\>` - searching words ending with `foo`
 * `/\<foo\>` - searching words `foo`
+
+* <kbd>TAB</kbd> - cycles through possible command completions
+* <kbd>CTRL-d</kbd> - lists possible command completions
+                  (repeat with n)
+* <kbd>ctrl-o</kbd>, <kbd>ctrl-i</kbd> go through jump locations
+* `[I` show lines with matching word under cursor
 
 #### Editor: Misc
 
