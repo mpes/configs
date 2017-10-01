@@ -134,6 +134,25 @@ In insert mode, try:
 * <kbd>ZQ</kbd> - quit all instances of vim
 * <kbd>Ctrl + z</kbd> - hide Vim to background - use `fg` in terminal to bring it to foreground
 * <kbd>Ctrl + l</kbd> - redraw Vim windows 
+* <kbd>ctrl-t</kbd>,<kbd>ctrl-d</kbd>- indent current line forward, backwards (insert mode)
+
+#### reformatting
+* `V=` select text, then reformat with =
+* `=`  will correct alignment of code
+* `==` one line; 
+* `gq` reformat paragraph
+Options to change how automatic formatting is done:
+`:set formatoptions` (default "tcq")
+* `t` - textwidth
+* `c` - comments (plus leader -- see :help comments)
+* `q` - allogw 'gq' to work
+* `n` - numbered lists
+* `2` - keep second line indent
+* `1` - single letter words on next line
+* `r` - (in mail) comment leader after 
+Other related options:
+* `:set wrapmargin`
+* `:set textwidth`
 
 ### Cursor navigation
 
