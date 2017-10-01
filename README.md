@@ -2,7 +2,7 @@
 ### Commandline
 * `vim filename` Opens new file in Vim
 * `vim -p` option opens each specified file in a separate tab (up to the value of the 'tabpagemax')
-* `vim -N` opens Vim in new mode incopatible with Vi
+* `vim -N` opens Vim in new mode incompatible with Vi (If a .vimrc file exists, vim will start in nocompatible mode automatically) You can also get nocompatible mode with these `:set nocompatible`
 
 ### Keyboard shortcuts
 
@@ -23,6 +23,8 @@
 * `:set list` or `:set nolist` - turn on/off
 * `:set list?` show current value
 * `:set list&` set to default value  
+* `TAB` cycles through possible command completions
+* <kbd>CTRL-d</kbd> - lists possible command completions
 
 ## Configuration rules
 
@@ -45,6 +47,9 @@ The best way is put them to file (`~/.vimrc`). Default path for configuration.
 * `set clipboard=unnamedplus` - Vim use the same buffer as OS
 * `set guifont=Inconsolata\ 12` - change font in editor
 
+### Modelines
+Modelines allow you to set variables specific to a file. By default, the first and last five lines are read by vim for variable settings. For example, if you put the following in the last line of a C program, you would get a textwidth of 60 chars when editing that file:
+* `/* vim: tw=60 ts=2: */`
 ### set operation
 
 * `:set list` show hidden characters
@@ -67,6 +72,7 @@ The best way is put them to file (`~/.vimrc`). Default path for configuration.
 * `:e filename` opens a file
 * `:cd path` changes working directory. Then we can use relative paths and use TAB to autocomplete
 * `:tab ball` moves opened files to tabs
+* `:set nocompatible` swithc to nocompatible mode
 ### Editor
 
 #### Editor: Open files
