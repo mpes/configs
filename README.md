@@ -1,8 +1,8 @@
 # VIM
 ### Commandline
-`vim filename` Opens new file in Vim
-`vim -p` option opens each specified file in a separate tab (up to the value of the 'tabpagemax')
-`vim -N` opens Vim in new mode incopatible with Vi
+* `vim filename` Opens new file in Vim
+* `vim -p` option opens each specified file in a separate tab (up to the value of the 'tabpagemax')
+* `vim -N` opens Vim in new mode incopatible with Vi
 
 ### Keyboard shortcuts
 
@@ -158,4 +158,5 @@ The best way is put them to file (`~/.vimrc`). Default path for configuration.
 ### Tips
 * `:123put =range(11,15)`  inserts number 11-15 after line number 123
 * `:for i in range(1,10) | put ='192.168.0.'.i | endfor` generates ip addresses 192.168.0.1 to 192.168.0.10
+* `gf` goes to the file under the cursor
 
