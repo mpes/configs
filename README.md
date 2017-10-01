@@ -46,7 +46,10 @@ The best way is put them to file (`~/.vimrc`). Default path for configuration.
 * `set nowrap` - don't wrap lines
 * `set clipboard=unnamedplus` - Vim use the same buffer as OS
 * `set guifont=Inconsolata\ 12` - change font in editor
-
+* `set ignorecase` case insensitive
+* `set smartcase` use case if any caps used 
+* `set incsearch` show match as search word is typed
+* `set hlsearch` search highlighting
 ### Modelines
 Modelines allow you to set variables specific to a file. By default, the first and last five lines are read by vim for variable settings. For example, if you put the following in the last line of a C program, you would get a textwidth of 60 chars when editing that file:
 * `/* vim: tw=60 ts=2: */`
