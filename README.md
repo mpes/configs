@@ -50,6 +50,17 @@ The best way is put them to file (`~/.vimrc`). Default path for configuration.
 ### Modelines
 Modelines allow you to set variables specific to a file. By default, the first and last five lines are read by vim for variable settings. For example, if you put the following in the last line of a C program, you would get a textwidth of 60 chars when editing that file:
 * `/* vim: tw=60 ts=2: */`
+
+### Word & line completion
+In insert mode, try:
+
+<kbd>ctrl-n<\kbd>, <kbd>ctrl-p<\kbd>  next/previous word completion (similar word in current file)
+<kbd>ctrl-x<\kbd><kbd>ctrl-l<\kbd> (<kbd>ctrl-n/p<\kbd>)    - line completion
+`:set dictionary=/usr/share/dict/words`
+<kbd>ctrl-x<\kbd><kbd>ctrl-k<\kbd>     - dictionary completion
+<kbd>ctrl-w<\kbd> erases word (insert mode...
+<kbd>ctrl-u<\kbd> erases line  ...or on command line)
+
 ### set operation
 
 * `:set list` show hidden characters
