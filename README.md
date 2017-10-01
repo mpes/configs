@@ -3,6 +3,7 @@
 * `vim filename` Opens new file in Vim
 * `vim -p` option opens each specified file in a separate tab (up to the value of the 'tabpagemax')
 * `vim -N` opens Vim in new mode incompatible with Vi (If a .vimrc file exists, vim will start in nocompatible mode automatically) You can also get nocompatible mode with these `:set nocompatible`
+* `find . | vim -` streams output into vim
 
 ### Keyboard shortcuts
 
@@ -53,7 +54,10 @@ The best way is put them to file (`~/.vimrc`). Default path for configuration.
 ### Modelines
 Modelines allow you to set variables specific to a file. By default, the first and last five lines are read by vim for variable settings. For example, if you put the following in the last line of a C program, you would get a textwidth of 60 chars when editing that file:
 * `/* vim: tw=60 ts=2: */`
-
+### Folding 
+select block, then `:fold`
+* `zo` - open
+* `zc` - close
 ### Word & line completion
 In insert mode, try:
 * <kbd>ctrl-n</kbd>, <kbd>ctrl-p</kbd>  next/previous word completion (similar word in current file)
