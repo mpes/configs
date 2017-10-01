@@ -74,6 +74,7 @@ The best way is put them to file (`~/.vimrc`). Default path for configuration.
 * `:e FILENAME` - open file to edit, replaced current window with file
 * `:tabe` (`:tabedit`) - open file in new tab
 * `:tabc` (`:tabclose`) - close current tab
+* `gt` / `gT` go to next/previous tab
 
 #### Editor: Searching, greping etc
 
