@@ -53,13 +53,12 @@ Modelines allow you to set variables specific to a file. By default, the first a
 
 ### Word & line completion
 In insert mode, try:
-
-<kbd>ctrl-n</kbd>, <kbd>ctrl-p</kbd>  next/previous word completion (similar word in current file)
-<kbd>ctrl-x</kbd><kbd>ctrl-l</kbd> (<kbd>ctrl-n/p</kbd>)    - line completion
-`:set dictionary=/usr/share/dict/words`
-<kbd>ctrl-x</kbd><kbd>ctrl-k</kbd>     - dictionary completion
-<kbd>ctrl-w</kbd> erases word (insert mode...
-<kbd>ctrl-u</kbd> erases line  ...or on command line)
+* <kbd>ctrl-n</kbd>, <kbd>ctrl-p</kbd>  next/previous word completion (similar word in current file)
+* <kbd>ctrl-x</kbd><kbd>ctrl-l</kbd> (<kbd>ctrl-n/p</kbd>)    - line completion
+* `:set dictionary=/usr/share/dict/words`
+* <kbd>ctrl-x</kbd><kbd>ctrl-k</kbd>     - dictionary completion
+* <kbd>ctrl-w</kbd> erases word (insert mode...
+*<kbd>ctrl-u</kbd> erases line  ...or on command line)
 
 ### set operation
 
