@@ -1,6 +1,7 @@
 # VIM
 ### Commandline
 `vim filename` Opens new file in Vim
+`vim -p` option opens each specified file in a separate tab (up to the value of the 'tabpagemax')
 `vim -N` opens Vim in new mode incopatible with Vi
 
 ### Keyboard shortcuts
