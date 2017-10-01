@@ -72,6 +72,12 @@ In insert mode, try:
 * `:set syntax=enable` enable syntax highlighting
 * `:set filetype=xml` sets syntax to XML
 * `:set softtabstop=2` control how many columns vim uses when you hit Tab in insert mode
+* `:set tabstop 8` - tabs are at proper location
+* `:set expandtab` - don't use actual tab character (ctrl-v)
+* `:set shiftwidth=4` - indenting is 4 spaces
+* `:set autoindent` - turns it on
+* `:set smartindent` - does the right thing (mostly) in programs
+* `:set cindent` - stricter rules for C programs
 * `:e .` browse directory
  `i` long, wide or tree
  `s` sort on name, siize or date
@@ -121,6 +127,7 @@ In insert mode, try:
 * `so ~/.vimrc` - reload configuration in opened editor
 * `:retab` - replace current whitespaces with sets in `.vimrc` file
 * `:!ls` - run command `ls` in shell
+* `:!sort` sort (selected)
 * <kbd>Ctrl + a</kbd> - increment number by one you are at
 * <kbd>Ctrl + x</kbd> - decrement number by one you are at
 * <kbd>ZZ</kbd> - write files and quit
@@ -176,9 +183,10 @@ In insert mode, try:
 * `ctrl+t` shift text right in insert mode
 
 #### Editor: Markers
-
+Marker names sets the area where we can use them: `a-z` within current file, `A-Z` across files
 * `m{char}` - save current position into `{char}`
 * \`{char} - go to saved mark
+* `d'{char}`  - delete from current position to mark k
 * `:marks` - display list of current saved markers
 
 ### Tips
